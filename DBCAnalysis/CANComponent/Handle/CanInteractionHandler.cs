@@ -95,7 +95,7 @@ namespace EOSeViewer.CANComponent.Handle
                     Byte[][] deviceNames = new Byte[deviceCount][];
                     for (Int32 type = 0; type < deviceCount; type++)
                     {
-                        deviceNames[type] = new Byte[32];
+                        deviceNames[type] = new Byte[64];
                         for (int flag = 0; flag < 64; flag++)
                         {
                             deviceNames[type][flag] = *(nameArray[type]);
